@@ -4,4 +4,19 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+  
+  <servlet>
+      <servlet-name>AddBookServlet</servlet-name>
+      <servlet-class>com.ajisafe.web.AddBookServlet</servlet-class>
+      <init-param>
+          <param-name>name</param-name>
+          <param-value>tope</param-value>
+      </init-param>
+  </servlet>
+  
+  <servlet-mapping>
+      <servlet-name>AddBookServlet</servlet-name>
+      <url-pattern>/add_book.do</url-pattern>
+  </servlet-mapping>
+  
 </web-app>
